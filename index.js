@@ -59,10 +59,11 @@ function isArrayLength (arr1, min, max) {
       if ((y && z) === undefined) {
         return 'Не указаны границы диапазона';
       };
-      let str = String;
+      /* let str = String;
       if (str !== String) {
         return 'Введите строку';
-      };
+      };   
+      Не прокатывает */
       let strLeng = str.length;
       if (strLeng >= y && strLeng <= z) {
       console.log (true);
@@ -71,4 +72,4 @@ function isArrayLength (arr1, min, max) {
         return ' Значение не введено или находится не в пределах диапазона';
       };
     };
-    isStringLength ('Hello', 1, 3)
+    isStringLength ('Hello', 1, 3);
